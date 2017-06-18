@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html>
+<head>
+
+<meta charset="">
+<title>Custom Wordpress Theme</title>
+<meta name="description" content="">
+<meta name="author" content="Brandon Tran">
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+
+<!-- Meta Properties -->
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:type" content="website">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="">
+
+<!-- Jquery -->
+<script src="lib.js" type="text/javascript"></script>
+<script src="jquery.js" type="text/javascript"></script>	
+
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="images/favicons/favicon.ico">
+<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    
+<style>
+    
+#top {
+    background:none!important;}
+    
+svg * {
+    fill:#FFF;}
+    
+#headline {
+    border:4px solid #FFF;
+    color:#FFF;
+    font-family:'Montserrat','PT Sans','Segoe UI Light','Open Sans','Helvetica', 'Arial', sans-serif;
+    font-size:40px;
+    letter-spacing:3px;
+    left:50%;
+    padding:20px;
+    position:fixed!important;
+    text-align:center;
+    text-transform:uppercase;
+    top:50%;
+    -webkit-transform:translateY(-50%) translateX(-50%);
+    -ms-transform:translateY(-50%) translateX(-50%);
+    transform:translateY(-50%) translateX(-50%);
+    width:auto;
+    z-index:99;}
+
+
+
+	
+	
+/* VIDEO */
+
+#bgvid {
+    background:url(videos/Alex_Posen_Video.jpg) no-repeat;
+    background-size:cover;
+    bottom:0;
+    height:auto;
+    min-height:100%;
+    min-width:100%;
+    position:fixed;
+    right:0;
+    width:auto;
+    z-index:-100;}
+
+#black {
+    background:rgba(0,0,0,.2);
+    height:100%;
+    left:0;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1;}
+
+#white {
+    background:rgba(255,255,255,.1);
+    height:109px;
+    left:0;
+    position:fixed;
+    top:35px;
+    width:210px;
+    z-index:1;}
+
+#overlay {
+    background:url(images/grid.png) top left repeat;
+    height:100%;
+    left:0;
+    opacity:.1;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1;}
+    
+</style>
+
+</head>
+
+	<body>
+	
+		<video autoplay loop muted poster="videos/Alex_Posen_Video.jpg" id="bgvid">
+            
+            <source src="videos/Alex_Posen_Video.webm" type="video/webm">
+            <source src="videos/Alex_Posen_Video.mp4" type="video/mp4">
+            
+        </video>
+	
+		<div id="top">
+        
+            <div id="logo">
+            
+                <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1260.5 126.5" enable-background="new 0 0 1260.5 126.5" xml:space="preserve"><g><g><path d="M2.601 2.911h64.961v13.064H18.17v40.086h45.633v12.885H18.17v54.581H2.601V2.911z"/><path d="M127.692 2.911h15.569v107.552H194.8v13.063h-67.108V2.911z"/><path d="M269.603 85.588l-12.527 37.938H240.97L281.95 2.911h18.79l41.16 120.616h-16.643l-12.885-37.938H269.603z M309.151 73.419L297.34 38.702c-2.684-7.874-4.474-15.032-6.263-22.011h-0.358c-1.789 7.158-3.758 14.495-6.084 21.8 l-11.812 34.896H309.151z"/><path d="M395.41 104.557c6.979 4.3 17.2 7.9 27.9 7.874c15.927 0 25.232-8.411 25.232-20.58 c0-11.274-6.442-17.717-22.727-23.98c-19.685-6.979-31.854-17.18-31.854-34.18c0-18.791 15.569-32.749 39.012-32.749 c12.348 0 21.3 2.9 26.7 5.905l-4.295 12.706c-3.938-2.147-11.99-5.727-22.906-5.727c-16.464 0-22.728 9.842-22.728 18.1 c0 11.3 7.3 16.8 24 23.264c20.401 7.9 30.8 17.7 30.8 35.433c0 18.611-13.78 34.717-42.233 34.7 c-11.632 0-24.338-3.4-30.78-7.695L395.41 104.557z"/><path d="M539.291 2.911v50.465h58.339V2.911h15.748v120.616H597.63v-56.55h-58.339v56.55h-15.569V2.911H539.291z"/></g></g><g><path d="M861.947 119.589c-5.727 2.863-17.18 5.727-31.854 5.727c-34.001 0-59.592-21.475-59.592-61.024 c0-37.759 25.591-63.35 62.992-63.35c15.032 0 24.5 3.2 28.6 5.368l-3.758 12.706c-5.906-2.863-14.316-5.011-24.338-5.011 c-28.275 0-47.065 18.074-47.065 49.75c0 29.5 17 48.5 46.4 48.497c9.484 0 19.147-1.968 25.411-5.011L861.947 119.589z"/><path d="M934.961 2.911v71.403c0 27 12 38.5 28.1 38.476c17.896 0 29.349-11.811 29.349-38.476V2.911h15.748v70.33 c0 37.043-19.506 52.255-45.634 52.255c-24.695 0-43.307-14.138-43.307-51.539V2.911H934.961z"/><path d="M1088.686 16.153H1052V2.911h89.298v13.243h-36.864v107.373h-15.748V16.153z"/><path d="M1190.512 104.557c6.979 4.3 17.2 7.9 27.9 7.874c15.927 0 25.232-8.411 25.232-20.58 c0-11.274-6.442-17.717-22.727-23.98c-19.686-6.979-31.854-17.18-31.854-34.18c0-18.791 15.569-32.749 39.013-32.749 c12.348 0 21.3 2.9 26.7 5.905l-4.295 12.706c-3.938-2.147-11.99-5.727-22.906-5.727c-16.464 0-22.728 9.842-22.728 18.1 c0 11.3 7.3 16.8 24 23.264c20.401 7.9 30.8 17.7 30.8 35.433c0 18.611-13.78 34.717-42.234 34.7 c-11.632 0-24.338-3.4-30.779-7.695L1190.512 104.557z"/></g><g><text transform="matrix(1 0 0 1 682.165 100.2939)" font-family="'MyriadPro-Regular'" font-size="107.2645">/</text></g></svg>
+            
+            </div>
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div id="menu" class="closed">
+            
+            <div id="cover"></div>
+            
+            <div id="wrap">
+                
+                <a class="open" href="#">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="25.917px" height="18.958px" viewBox="0 0 25.917 18.958" enable-background="new 0 0 25.917 18.958" xml:space="preserve"><g display="none"><image display="inline" overflow="visible" width="46" height="54" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA EAMCAwYAAAGQAAAByAAAApP/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIADYALgMBIgACEQEDEQH/ xABxAAEBAQEAAAAAAAAAAAAAAAAABgMHAQEAAAAAAAAAAAAAAAAAAAAAEAACAwEAAAAAAAAAAAAA AAADBAAFFjARAAIBAwUBAQEAAAAAAAAAAAIDAQARBCExkdQ2EhAwEgEAAAAAAAAAAAAAAAAAAAAw /9oADAMBAAIRAxEAAADoAAAMZWqlQCq2x2MZWwEesBjsAAAH/9oACAECAAEFAOn/2gAIAQMAAQUA 6f/aAAgBAQABBQDo4EjCmLvpi76Yu+iYSLqRwJGFMXfTF30xd9EwkXUjgSMKYu+mLvpi76JhIup1 /9oACAECAgY/AE//2gAIAQMCBj8AT//aAAgBAQEGPwD+j8dTZQxyzWDhv9LIhkYOLTGo7716fL4Z 2K9Pl8M7Feny+GdikY7Wy9iVgs3Ff6YQjAyc3mdS33/H46myhjlmsHDf6WRDIwcWmNR33r0+Xwzs V6fL4Z2K9Pl8M7FIx2tl7ErBZuK/0whGBk5vM6lvv+Px1NlDHLNYOG/0siGRg4tMajvvXp8vhnYr 0+XwzsV6fL4Z2KRjtbL2JWCzcV/phCMDJzeZ1Lff+3//2Q==" transform="matrix(1 0 0 1 -7.042 -17)"></image></g><g><rect x="-0" width="26" height="3"/><rect x="-0" y="8" width="26" height="3"/><rect x="-0" y="16" width="26" height="3"/></g></svg>
+                
+                </a>
+                
+                <a class="close" href="#">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="20.708px" height="20.542px" viewBox="0 0 20.708 20.542" enable-background="new 0 0 20.708 20.542" xml:space="preserve"><rect x="-2.6" y="8.8" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 24.9884 10.2325)" width="26" height="3"/><rect x="-2.6" y="8.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 10.316 -4.3219)" width="26" height="3"/></svg>
+                
+                </a>
+                
+                <div id="items">
+                
+                    <ul id="topmenu" class="menu">
+                        <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-16"><a href="http://www.tec-photos.com/">Home</a></li>
+                        <li id="menu-item-289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a href="http://www.tec-photos.com/blog/weddings">Blog</a></li>
+                        <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://www.tec-photos.com/portfolio">Portfolio</a></li>
+                        <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="http://www.tec-photos.com/faqs">FAQs</a></li>
+                        <li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="http://www.tec-photos.com/contact">Contact</a></li>
+                    </ul>
+                    
+                    <ul id="icons">
+                    
+                        <a href="" target="_blank" class="email"><li><i>&#xf0e0;</i></li></a>
+                        <a href="" target="_blank" class="twitter"><li><i>&#xf099;</i></li></a>
+                        <a href="" target="_blank" class="facebook"><li><i>&#xf09a;</i></li></a>
+                        <a href="" target="_blank" class="google"><li><i>&#xf0d5;</i></li></a>
+                    
+                    </ul>
+                
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        
+        
+	
+		<div id="main" style="height:900px;">
+        
+            
+        
+        </div>
+        
+        
+        
+        
+        
+        
+	
+		<div id="bottom">
+                
+            <ul id="icons">
+
+                <a href="" target="_blank" class="email"><li><i>&#xf0e0;</i></li></a>
+                <a href="" target="_blank" class="twitter"><li><i>&#xf099;</i></li></a>
+                <a href="" target="_blank" class="facebook"><li><i>&#xf09a;</i></li></a>
+                <a href="" target="_blank" class="google"><li><i>&#xf0d5;</i></li></a>
+
+            </ul>
+            
+            <footer>Flashcuts &copy; 2006 &mdash; 2015. All rights reserved.</footer>
+        
+        </div>
+        
+        
+        
+        
+        
+        
+	
+        <div id="headline">
+        
+            LA's Finest Post-Production Firm
+        
+        </div>
+	
+	</body>
+
+</html>
