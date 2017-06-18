@@ -73,12 +73,7 @@ if(!is_page(6) && !is_page(97) && !is_page(76) && !is_page(79)) { ?><meta proper
 <?php wp_head(); ?>
     
 <?php $menu_cover_image = get_field( 'menu_cover_image', 182 ); if(!empty($menu_cover_image)) { ?>
-<style>
-    
-    #menu #cover {
-        background-image:url(<?php echo $menu_cover_image; ?>);}
-    
-</style>
+
 <?php } ?>
 
 <?php 
