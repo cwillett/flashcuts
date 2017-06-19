@@ -106,6 +106,12 @@ if (is_page_template('template-home.php')) {
             
             </div>
             
+            <div id="small_logo">
+            
+                <a href="/"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" border="0"></a>
+            
+            </div>
+            
             <div id="emblem">
                 
                 <a href="/"><?php include('images/emblem.svg'); ?></a>
