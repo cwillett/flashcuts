@@ -509,7 +509,7 @@ h6 {
   right: 0;
   text-align: right;
   top: 0;
-  z-index: -1; }
+  z-index: 0; }
 
 #menu.closed {
   width: auto; }
@@ -518,7 +518,7 @@ h6 {
   height: 100%;
   position: fixed !important;
   width: 100%;
-  z-index: -1; }
+  z-index: 0; }
 
 /* MENU COVER */
 #menu #cover {
