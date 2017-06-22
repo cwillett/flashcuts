@@ -26,8 +26,8 @@ $font-body:'PT Sans','Segoe UI Light','Open Sans','Helvetica', 'Arial', sans-ser
 $font-primary:'Montserrat','PT Sans','Segoe UI Light','Open Sans','Helvetica', 'Arial', sans-serif;
 $font-secondary:$font-body;
 
-$tan:rgba(239,218,160,1);
-$tan2:rgba(216,202,160,1);
+$tan:rgba(233, 191, 79, 1);
+$tan2:rgba(233, 191, 79, 1);
 
 $grey-extra-light:rgba(253,253,253,1);
 $grey-light:rgba(248,248,248,1);
@@ -540,8 +540,11 @@ h6 {font-size: 12px;}
     
     #top {
         
+        z-index: 10000;
+        
         svg#logo {
-            display:none;}
+            display:none;
+        }
             
         #small_logo {
             display: block;
@@ -553,11 +556,13 @@ h6 {font-size: 12px;}
                 display: block;
                 height:20px;
                 width:200px;
+                z-index: 10000;
             }
         }
         
         #emblem {
-            display:none;}
+            display:none;
+        }
     
     }
     
@@ -566,6 +571,8 @@ h6 {font-size: 12px;}
 @media (max-width: 370px) {
     
     #top {
+        
+        z-index: 10;
         
         #logo {
             display: none;}
@@ -596,7 +603,7 @@ h6 {font-size: 12px;}
     right:0;
     text-align:right;
     top:0;
-    z-index:0;}
+    z-index:1;}
 
 #menu.closed {
     width:auto;}
@@ -604,8 +611,7 @@ h6 {font-size: 12px;}
 #menu.opened {
     height:100%;
     position:fixed!important;
-    width:100%;
-    z-index:0;}
+    width:100%;}
 
 
 
@@ -641,7 +647,8 @@ h6 {font-size: 12px;}
 /* MENU WRAP */
 
 #menu #wrap {
-    padding:$padding;}
+    padding:$padding;
+    z-index: 1;}
 
 #menu #wrap.opened {
     background:#FFF;
@@ -654,7 +661,7 @@ h6 {font-size: 12px;}
 #menu #wrap .close {
     display:none;
     position:relative;
-    z-index:99999999;}
+    z-index:99999;}
 
 #menu #wrap .close.default-color svg * {
     fill:#000!important;}
@@ -706,7 +713,8 @@ h6 {font-size: 12px;}
 #main {
     margin:auto;
     padding:$padding;
-    width:100%;}
+    width:100%;
+    z-index: 0}
 
 /**/
 
@@ -999,6 +1007,21 @@ video.background {
     border-bottom:2px solid $grey-highlight;
     padding:60px 0;
     width:100%;
+    
+    .submenu {
+        margin-top: -2px; }
+    .submenu a li {
+        display: inline-block;
+        font-family: 'Montserrat', 'PT Sans', 'Segoe UI Light', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+        font-size: 15px;
+        margin: 0 20px 0 0;
+        padding: 10px;
+        text-transform: uppercase; }
+    .submenu a.current li {
+        background: #e9bf4f;
+        color: #FFF; }
+    .submenu a:not(.current) li:hover {
+        background: #FFF; }
     
     .header {
         border-bottom:3px solid $grey-highlight;
