@@ -1,0 +1,29 @@
+.header-overlay {
+    .header:not(.headroom--not-top), &.header:not(.headroom--not-top) {
+        background-color: transparent;
+        position: absolute;
+        nav {
+            > ul {
+                > li {
+                    > a {
+                        color: #ffffff !important;
+                    }
+                }
+            }
+        }
+        .header-right {
+            .header-search {
+                /* header 01 */
+                form {
+                    &:after {
+                        color: #ffffff;
+                    }
+                }
+            }
+            .open-search {
+                /* header 02 */
+                color: #ffffff;
+            }
+        }
+    }
+}

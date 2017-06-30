@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------
+# Header 02
+--------------------------------------------------------------*/
+header.header-03 {
+    display: inline-block;
+    width: 100%;
+    .top-search {
+        padding: 0 15px;
+        text-align: center;
+        input {
+            text-align: center;
+        }
+    }
+	&.headroom--not-top .open-right {
+		display: block;
+		font-size: 30px;
+	}
+    .header-container {
+        position: relative;
+        z-index: 999;
+        .row {
+            margin: 0;
+        }
+        .header-right {
+            position: static;
+            nav.menu {
+                display: inline-block;
+                text-align: right;
+                > ul {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    list-style: none;
+                    > li {
+                        > a {
+                            text-transform: uppercase;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+            .open-search {
+                display: inline-block;
+                font-size: 18px;
+                line-height: 1;
+                margin-left: 20px;
+                cursor: pointer;
+                color: #333333;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+
+}

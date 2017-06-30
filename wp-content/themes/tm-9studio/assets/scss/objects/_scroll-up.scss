@@ -1,0 +1,38 @@
+a.scrollup {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 24px;
+    @include border-radius(50%);
+    text-align: center;
+    color: #ffffff;
+    background-color: $color__primary;
+    position: fixed;
+    right: 60px;
+    cursor: pointer;
+    opacity: 0;
+    bottom: 0;
+    &:before {
+        content: '';
+        width: 74px;
+        height: 74px;
+        @include border-radius(50%);
+        background-color: $color__primary;
+        opacity: .3;
+        position: absolute;
+        top: -9px;
+        left: -9px;
+        transform: scale(.5);
+        @include transit;
+    }
+    &.show {
+        opacity: 1;
+        bottom: 60px;
+        color: #ffffff;
+        &:hover {
+            &:before {
+                transform: scale(1);
+            }
+        }
+    }
+}

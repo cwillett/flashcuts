@@ -1,0 +1,123 @@
+.insight-team-filter {
+    .insight-filter {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        ul {
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+            li {
+                list-style: none;
+                display: inline-block;
+                padding-right: 50px;
+                a {
+                    cursor: pointer;
+                    text-transform: lowercase;
+                    color: #333333;
+                    font-weight: 700;
+                    font-family: $font__third;
+                    font-size: 56px;
+                    opacity: .2;
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .insight-filter-items {
+        margin-top: 80px;
+        .insight-filter-item {
+            &.insight-hide {
+                display: none;
+            }
+            .insight-filter-item-inner {
+                margin-right: 0px;
+                margin-bottom: 30px;
+                -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+                -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+                @include transit;
+                .thumb {
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        @include transit;
+                    }
+                }
+                .info {
+                    background-color: #ffffff;
+                    text-align: center;
+                    padding: 25px 10px;
+                    .name {
+                        font-size: 18px;
+                        font-weight: 700;
+                        font-family: $font__second;
+                        color: #333333;
+                        text-transform: uppercase;
+                        a {
+                            font-size: 18px;
+                            font-weight: 700;
+                            font-family: $font__second;
+                            color: #333333;
+                            &:hover {
+                                color: $color__primary;
+                            }
+                        }
+                    }
+                    .tagline {
+                        font-size: 12px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        font-family: $font__second;
+                        color: #cccccc;
+                        line-height: 28px;
+                        height: 28px;
+                        overflow: hidden;
+                    }
+                    .socials {
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family: $font__main;
+                        color: #cccccc;
+                        line-height: 28px;
+                        height: 28px;
+                        overflow: hidden;
+                        a {
+                            display: inline-block;
+                            margin: 0 5px;
+                            color: #cccccc;
+                            &:hover {
+                                color: $color__primary;
+                            }
+                        }
+                    }
+                }
+                .info .socials {
+                    display: none;
+                }
+                &:hover {
+                    -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                    .thumb {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                    .info .socials {
+                        display: block;
+                    }
+                    .info .tagline {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.insight-project-info {
+    &.style01 {
+        display: block;
+        width: 100%;
+        padding: 50px 30px;
+        background-color: #f6f7f7;
+        .info-item {
+            display: block;
+            margin-bottom: 40px;
+            .title {
+                font-size: 14px;
+                font-weight: 700;
+                font-family: $font__second;
+                color: #333333;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            .content {
+                font-size: 14px;
+                color: #696969;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.style02 {
+        display: block;
+        margin-left: -15px;
+        margin-right: -15px;
+        .info-item {
+            display: block;
+            padding: 0 15px;
+            outline: none;
+            .info-item-inner {
+                padding: 30px;
+                background-color: #f6f7f7;
+                .title {
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: $font__second;
+                    color: #333333;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                .content {
+                    font-size: 14px;
+                    color: #696969;
+                }
+            }
+        }
+        .slick-dots {
+            position: relative;
+            margin: 0 auto;
+            bottom: auto;
+            li {
+                margin: 0;
+                button {
+                    &:before {
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

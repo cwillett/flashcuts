@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# Header mobile
+--------------------------------------------------------------*/
+header.header-mobile {
+    display: none;
+    width: 100%;
+    .header-mobile-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .header-left {
+        font-size: 24px;
+        text-align: left;
+        #open-left {
+            cursor: pointer;
+        }
+    }
+    .header-center {
+        text-align: center;
+    }
+    .header-right {
+        font-size: 24px;
+        text-align: right;
+        #open-search-mobile {
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    header.header-mobile {
+        display: block;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    header.header-mobile {
+
+    }
+}

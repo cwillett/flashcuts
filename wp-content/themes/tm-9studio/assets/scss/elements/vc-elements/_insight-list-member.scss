@@ -1,0 +1,78 @@
+.insight-list-member {
+	overflow: hidden;
+	margin-left: -15px;
+	margin-right: -15px;
+	.item {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 15px;
+		margin-right: 15px;
+		position: relative;
+		@include media-breakpoint-down(md) {
+			display: block;
+			text-align: center;
+        }
+		&:nth-child(even) {
+			@include media-breakpoint-up(md) {
+				margin-top: 110px;
+				.info {
+					text-align: right;
+					position: absolute;
+					bottom: 0;
+					right: 100%;
+					white-space: nowrap;
+					margin-right: 50px;
+					left: auto;
+					top: auto;
+				}
+				.name {
+					&:after {
+						left: auto;
+						right: -80px;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-up(md) {
+			.info {
+				position: absolute;
+				top: 0;
+				left: 100%;
+				white-space: nowrap;
+				margin-left: 50px;
+			}
+		}
+		.info {
+			margin-top: 35px;
+			margin-bottom: 20px;
+		}
+		.name {
+			text-transform: uppercase;
+			font-family: $font__second;
+			font-size: 18px;
+			font-weight: 700;
+			color: #333333;
+			position: relative;
+			display: inline-block;
+			@include media-breakpoint-up(md) {
+				&:after {
+					position: absolute;
+					content: '';
+					display: block;
+					width: 60px;
+					height: 2px;
+					background-color: $color__primary;
+					top: 50%;
+					margin-top: -2px;
+					left: -80px;
+				}
+	        }
+		}
+		.tagline {
+			font-size: 12px;
+			color: #ccc;
+			letter-spacing: 0.1em;
+			display: block;
+		}
+	}
+}

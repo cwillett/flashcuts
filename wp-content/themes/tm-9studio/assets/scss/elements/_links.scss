@@ -1,0 +1,32 @@
+a {
+    color: $color__gray;
+    text-decoration: none;
+    @include transit;
+
+    // &:visited {
+    // 	color: $color__link-visited;
+    // }
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color__primary;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+}
+
+.insight-btn {
+	&.alt {
+		background-color: #fff;
+		color: $color__primary;
+		&:hover {
+			background-color: $color__primary;
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,107 @@
+.site {
+    overflow: hidden;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-only($breakpoint) {
+        .hidden-#{$breakpoint} {
+            display: none;
+        }
+    }
+}
+
+[visibility='visible'] {
+    display: block;
+}
+
+[visibility='hidden'] {
+    display: none;
+}
+
+a.cookie_notice_ok {
+    border: 1px solid $color__primary;
+    padding: 2px 5px;
+    border-radius: 2px;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    &:hover {
+        background-color: $color__primary !important;;
+        color: #ffffff !important;
+    }
+}
+
+.tf-bubble {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    height: 1px;
+    z-index: 9999997;
+    display: inline-block;
+    .bubble-content {
+        visibility: hidden;
+        position: absolute;
+        padding: 20px 30px;
+        font-size: 13px;
+        top: 0;
+        right: 90px;
+        margin-top: -39px;
+        background: #fff;
+        width: 300px;
+        z-index: 1;
+        text-align: center;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+        opacity: 0;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 33px;
+            right: -6px;
+            width: 12px;
+            height: 12px;
+            background: #ffffff;
+            z-index: 1;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+    .bubble-btn {
+        width: 60px;
+        height: 60px;
+        margin-top: -30px;
+        @include border-radius(50%);
+        background: $color__primary;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        a {
+            color: #fff;
+        }
+        span {
+            font-size: 10px;
+            display: block;
+            line-height: 1;
+            padding: 13px 0 2px 0;
+        }
+        strong {
+            display: block;
+            font-size: 22px;
+            line-height: 1;
+            font-weight: 900;
+        }
+    }
+    &:hover {
+        .bubble-content {
+            opacity: 1;
+            visibility: visible;
+        }
+        .bubble-btn {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+    }
+}

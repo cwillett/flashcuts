@@ -1,0 +1,57 @@
+.insight-home-services {
+    color: #ffffff;
+    .icon {
+        font-size: 36px;
+    }
+    .title {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: $font__second;
+        text-transform: uppercase;
+    }
+    .links {
+        margin-top: 15px;
+        a {
+            display: block;
+            color: #ababab;
+            font-size: 14px;
+            line-height: 1;
+            margin-top: 15px;
+            &:hover {
+                color: $color__primary;
+                text-decoration: underline;
+            }
+        }
+    }
+    &.align-left {
+        text-align: left;
+    }
+    &.align-center {
+        text-align: center;
+    }
+    &.align-right {
+        text-align: right;
+    }
+    &.color-white {
+        color: #ffffff;
+        a {
+            color: #ababab;
+            &:hover {
+                color: $color__primary;
+            }
+        }
+    }
+    &.color-primary {
+        color: $color__primary;
+        a {
+            color: $color__primary;
+        }
+    }
+    &.color-black {
+        color: #333333;
+        a {
+            color: #333333;
+        }
+    }
+}

@@ -436,6 +436,12 @@ h6 {
 
   .hide {
     display: none; } }
+@media (min-width: 751px) {
+  #menu {
+    z-index: 1; }
+
+  #menu #wrap.opened {
+    width: 18%; } }
 /* ---------- TOP ---------- */
 #top {
   background: #FFF;
@@ -472,14 +478,20 @@ h6 {
       height: 20px;
       position: relative;
       width: 200px;
-      z-index: 10000; }
+      z-index: 10000;
+      background: #fff;
+      padding-left: 10px; }
       #top #small_logo img {
         display: block;
         height: 20px;
-        width: 200px; } }
+        width: 200px; }
+
+  #menu #wrap.opened {
+    width: 45%; } }
 @media (max-width: 500px) {
   #top {
-    z-index: 10000; }
+    z-index: 10000;
+    padding: 50px 0; }
     #top svg#logo {
       display: none; }
     #top #small_logo {
@@ -487,17 +499,29 @@ h6 {
       height: 20px;
       position: relative;
       width: 200px;
-      z-index: 10000; }
+      z-index: 10000;
+      background: #fff;
+      padding-left: 10px; }
       #top #small_logo img {
         display: block;
         height: 20px;
         width: 200px;
         z-index: 10000; }
     #top #emblem {
-      display: none; } }
+      display: none; }
+
+  #menu {
+    z-index: 99999; }
+
+  #menu #wrap {
+    z-index: 99999; }
+
+  #menu #wrap.opened {
+    width: 45%; } }
 @media (max-width: 370px) {
   #top {
-    z-index: 10; }
+    z-index: 10;
+    padding: 50px 0 50px 50px; }
     #top #logo {
       display: none; }
     #top #small_logo {
@@ -507,14 +531,19 @@ h6 {
       z-index: 10000; }
       #top #small_logo img {
         display: block;
-        width: 150px; } }
+        width: 150px; }
+
+  #menu {
+    z-index: 99999; }
+
+  #menu #wrap {
+    z-index: 99999; } }
 /* MENU */
 #menu {
   position: absolute;
   right: 0;
   text-align: right;
-  top: 0;
-  z-index: 1; }
+  top: 0; }
 
 #menu.closed {
   width: auto; }
@@ -551,8 +580,7 @@ h6 {
   height: 100%;
   position: absolute;
   right: 0;
-  top: 0;
-  width: 18%; }
+  top: 0; }
 
 #menu #wrap .close {
   display: none;
@@ -562,6 +590,11 @@ h6 {
 #menu #wrap .close.default-color svg * {
   fill: #000 !important; }
 
+#menu #wrap .open {
+  z-index: 99999;
+  display: inline;
+  background: transparent; }
+
 #menu #wrap .open:hover svg *, #menu #wrap .close.default-color:hover svg * {
   fill: #e9bf4f !important;
   transition: .1s; }
@@ -569,10 +602,7 @@ h6 {
 /**/
 @media (max-width: 750px) {
   #menu #wrap {
-    padding: 50px; }
-
-  #menu #wrap.opened {
-    width: 100%; } }
+    padding: 50px; } }
 /* MENU ITEMS */
 #menu #wrap #items {
   display: none;

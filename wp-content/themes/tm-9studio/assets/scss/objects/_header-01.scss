@@ -1,0 +1,113 @@
+/*--------------------------------------------------------------
+# Header 01
+--------------------------------------------------------------*/
+header.header-01 {
+    display: inline-block;
+    width: 100%;
+    .top-search {
+        padding: 0 15px;
+        text-align: center;
+        input {
+            text-align: center;
+        }
+    }
+    .header-container {
+        position: relative;
+        z-index: 999;
+        .row {
+            margin: 0;
+        }
+        .header-left {
+            padding-left: 100px;
+            .rtl & {
+                padding-left: 15px;
+                padding-right: 100px;
+            }
+        }
+        .header-center {
+            position: static;
+            nav.menu {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                > ul {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    list-style: none;
+                    > li {
+                        > a {
+                            text-transform: uppercase;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+        .header-right {
+            padding-right: 100px;
+            text-align: right;
+            .header-search {
+                max-width: 260px;
+                display: inline-block;
+                height: 32px;
+                line-height: 32px;
+                border-bottom: 1px solid #eeeeee;
+                position: relative;
+                form {
+                    position: relative;
+                    height: 32px;
+                    line-height: 32px;
+                    input[type="text"], input[type="search"] {
+                        height: 32px;
+                        line-height: 32px;
+                        vertical-align: top;
+                        padding: 0;
+                        border: none;
+                        background-color: transparent;
+                        font-size: 14px;
+                        font-family: $font__second;
+                        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                            color: #ababab;
+                        }
+                        &::-moz-placeholder { /* Firefox 19+ */
+                            color: #ababab;
+                        }
+                        &:-ms-input-placeholder { /* IE 10+ */
+                            color: #ababab;
+                        }
+                        &:-moz-placeholder { /* Firefox 18- */
+                            color: #ababab;
+                        }
+                    }
+                    input[type="submit"] {
+                        width: 32px;
+                        height: 32px;
+                        line-height: 32px;
+                        font-size: 0;
+                        vertical-align: top;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        padding: 0;
+                        border: none;
+                        background-color: transparent;
+                        z-index: 8;
+                    }
+                    &:after {
+                        content: '\f4a4';
+                        font-family: Ionicons;
+                        font-size: 24px;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        z-index: 7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+
+}

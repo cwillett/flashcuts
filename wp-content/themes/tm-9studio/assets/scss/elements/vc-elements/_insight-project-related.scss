@@ -1,0 +1,157 @@
+.insight-project-related {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    .related-title {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: $font__third;
+        color: #333333;
+        position: relative;
+        &:after {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background-color: $color__primary;
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+    }
+    .slick-list {
+        padding-bottom: 30px;
+    }
+    .slick-dots {
+        position: relative;
+        margin: 0 auto;
+        bottom: auto;
+        li {
+            margin: 0;
+            button {
+                &:before {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    .slick-arrow {
+        top: -90px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 50px;
+        height: 40px;
+        border: 2px solid #eff0f2;
+        line-height: 36px;
+        text-align: center;
+        @include transit;
+        &:before {
+            color: #696969;
+            font-size: 18px;
+            font-weight: 700;
+            height: 36px;
+            line-height: 36px;
+            @include transit;
+        }
+        &:hover {
+            color: $color__primary;
+            &:before {
+                color: $color__primary;
+            }
+        }
+        &.slick-next {
+            left: auto;
+            right: 15px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 20px;
+            &:before {
+                content: '\f3d1';
+                font-family: Ionicons;
+            }
+        }
+        &.slick-prev {
+            left: auto;
+            right: 65px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 0;
+            border-right: 1px solid #eff0f2;
+            &:before {
+                content: '\f3cf';
+                font-family: Ionicons;
+            }
+        }
+    }
+    .items {
+        display: block;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: 50px;
+        margin-bottom: 0;
+        .item {
+            padding: 0 15px;
+            outline: none;
+            .item-inner {
+                display: block;
+                width: 100%;
+                background-color: #ffffff;
+                -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+                -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+                .thumb {
+                    overflow: hidden;
+                    img {
+                        display: block;
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        height: auto;
+                        @include transit;
+                    }
+                }
+                .info {
+                    padding: 15px 30px;
+                    .title {
+                        a {
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-family: $font__third;
+                            color: #333333;
+                            &:hover {
+                                color: $color__primary;
+                            }
+                        }
+                    }
+                    .category {
+                        a {
+                            font-size: 12px;
+                            font-weight: 400;
+                            font-family: $font__second;
+                            text-transform: uppercase;
+                            color: #cccccc;
+                            display: inline-block;
+                            margin-right: 20px;
+                            &:hover {
+                                color: $color__primary;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .thumb {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

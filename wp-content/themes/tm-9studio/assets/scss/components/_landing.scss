@@ -1,0 +1,45 @@
+body.landing {
+    .header {
+        border-bottom: none !important;
+    }
+}
+
+.landing_image_01 {
+    .vc_figure {
+        position: relative;
+        img {
+            @include transit;
+        }
+        &:before {
+            content: 'Live Preview';
+            font-family: $font__second;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            height: 48px;
+            line-height: 46px;
+            color: $color__primary;
+            border: 1px solid $color__primary;
+            padding: 0 20px;
+            display: inline-block;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            @include transit;
+            overflow: hidden;
+        }
+    }
+    &:hover {
+        .vc_figure {
+            img {
+                opacity: .1;
+            }
+            &:before {
+                top: 50%;
+                opacity: 1;
+            }
+        }
+    }
+}

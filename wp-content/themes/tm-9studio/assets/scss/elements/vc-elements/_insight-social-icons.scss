@@ -1,0 +1,37 @@
+.insight-social-icons {
+    a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+        text-align: center;
+        border: 1px solid #f4f4f4;
+        border-radius: 20px;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #696969;
+        &:hover {
+            background-color: $color__primary;
+            border-color: $color__primary;
+            color: #ffffff !important;
+        }
+    }
+    &.text-left {
+        a {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+    }
+    &.text-right {
+        a {
+            margin-left: 10px;
+            margin-right: 0;
+        }
+    }
+    &.text-center {
+        a {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+#__bs_notify__ {
+    //Move notification to bottom
+    top: auto !important;
+    bottom: 20% !important;
+    border-top-left-radius: 5px !important;
+    background-color: #ab61ff !important;
+    font-size: 20px !important;
+    font-family: $font-family-sans-serif !important;
+}

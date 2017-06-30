@@ -1,0 +1,47 @@
+.insight-links-cloud {
+	&.dark {
+		ul li a {
+			color: #696969;
+			&:before {
+				color: #696969;
+			}
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	ul {
+		padding: 0;
+		li {
+			display: inline;
+
+			&:first-child {
+				a:before {
+					display: none;
+				}
+			}
+			a {
+				font-size: 24px;
+				line-height: 48px;
+				font-weight: 400;
+				font-family: $font__third;
+				color: #ababab;
+				&:hover {
+					color: #333;
+				}
+				&:before {
+				    content: "\f111";
+				    font-family: FontAwesome;
+				    font-size: 6px;
+				    display: inline-block;
+					line-height: 1;
+					margin-left: 20px;
+					margin-right: 20px;
+					padding-top: 10px;
+				    transform: translateY(-50%);
+				    color: #e2e2e2;
+				}
+			}
+		}
+	}
+}

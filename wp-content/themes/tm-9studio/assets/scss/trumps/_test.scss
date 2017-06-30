@@ -1,0 +1,7 @@
+.test {
+    float: left; // test rtl
+    font-awesome: facebook; //font awesome
+    @include media-breakpoint-up(sm) {
+        font-size: 32px; // px to rem
+    }
+}

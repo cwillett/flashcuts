@@ -4,3 +4,4 @@ wp-config.php
 /wp-content/uploads/
 /wp-content/themes/flashcuts/.sass-cache/
 /wp-content/themes/flashcuts/icons/scss/
+.sass-cache/

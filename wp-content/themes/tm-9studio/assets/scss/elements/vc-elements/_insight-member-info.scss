@@ -1,0 +1,38 @@
+.insight-member-info {
+    .member-info {
+        display: table;
+        .line {
+            display: table-row;
+            .name {
+                font-weight: 700;
+                font-family: $font__second;
+                color: #333333;
+                display: table-cell;
+                padding: 10px 0;
+            }
+            .value {
+                display: table-cell;
+                padding: 10px 0 10px 40px;
+                &.socials {
+                    a {
+                        width: 30px;
+                        height: 30px;
+                        display: inline-block;
+                        border: 1px solid #cdcdcd;
+                        color: #cdcdcd;
+                        text-align: center;
+                        line-height: 28px;
+                        font-size: 12px;
+                        margin-right: 10px;
+                        @include border-radius(15px);
+                        &:hover {
+                            background-color: $color__primary;
+                            border-color: $color__primary;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

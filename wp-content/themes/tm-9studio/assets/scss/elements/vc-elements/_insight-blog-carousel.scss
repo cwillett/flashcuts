@@ -1,0 +1,246 @@
+.insight-blog-carousel {
+    .blog-item {
+        padding-left: 30px;
+        padding-right: 30px;
+        outline: none;
+        .blog-item-inner {
+            padding: 30px;
+            min-height: 205px;
+            background-color: #ffffff;
+            position: relative;
+            @include transit;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -20px;
+                border-top: 10px solid #ffffff;
+                border-right: 10px solid #ffffff;
+                border-bottom: 10px solid transparent;
+                border-left: 10px solid transparent;
+            }
+            .time {
+                font-family: $font__second;
+                font-size: 12px;
+                font-weight: 400;
+                color: #cccccc;
+                text-transform: uppercase;
+            }
+            .title {
+                font-size: 18px;
+                font-weight: 400;
+                //font-family: $font__second;
+                color: #333333;
+                line-height: 28px;
+                margin-top: 20px;
+            }
+            .meta {
+                margin-top: 40px;
+                color: #696969;
+                > span {
+                    display: inline-block;
+                    margin-right: 20px;
+                    a {
+                        color: #696969;
+                    }
+                    &.view {
+                        &:before {
+                            content: '\f133';
+                            font-family: Ionicons;
+                            font-size: 16px;
+                            color: $color__primary;
+                            margin-right: 10px;
+                        }
+                    }
+                    &.share {
+                        &:before {
+                            content: '\f3ac';
+                            font-family: Ionicons;
+                            font-size: 16px;
+                            color: $color__primary;
+                            margin-right: 10px;
+                        }
+                    }
+                    &.like {
+                        a {
+                            &:before {
+                                content: '\f387';
+                                font-family: Ionicons;
+                                font-size: 16px;
+                                color: $color__primary;
+                                margin-right: 10px;
+                                display: inline-block;
+                            }
+                            &.liked {
+                                &:before {
+                                    content: '\f388';
+                                }
+                            }
+                            &.loading {
+                                &:before {
+                                    content: '\f3b1';
+                                    -webkit-animation: spin 2s infinite linear;
+                                    -moz-animation: spin 2s infinite linear;
+                                    -o-animation: spin 2s infinite linear;
+                                    animation: spin 2s infinite linear;
+                                }
+                            }
+                        }
+                    }
+                    &.comment {
+                        &:before {
+                            content: '\f11a';
+                            font-family: Ionicons;
+                            font-size: 16px;
+                            color: $color__primary;
+                            margin-right: 10px;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            &:hover {
+                -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+                -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
+    .slick-list {
+        overflow: visible !important;
+    }
+    .slick-dots {
+        margin-top: 30px;
+        margin-bottom: 0;
+        position: relative;
+        bottom: 0;
+        li {
+            margin: 0;
+            button {
+                &:before {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    &.style02 {
+        .blog-item {
+            padding-left: 15px;
+            padding-right: 15px;
+            .blog-item-inner {
+                padding: 0;
+                @include transit;
+                .blog-thumbnail {
+                    overflow: hidden;
+                    img {
+                        @include transit;
+                    }
+                }
+                .blog-info {
+                    padding: 30px;
+                    background-color: #ffffff;
+                    .blog-info-date, .blog-info-title, .blog-info-meta {
+                        display: block;
+                    }
+                    .blog-info-date {
+                        font-size: 14px;
+                        font-family: $font__second;
+                        color: #cccccc;
+                        text-transform: uppercase;
+                        line-height: 1;
+                        margin-bottom: 30px;
+                    }
+                    .blog-info-title {
+                        font-size: 18px;
+                        font-family: $font__third;
+                        font-weight: 400;
+                        color: #333333;
+                        margin-bottom: 70px;
+                        &:hover {
+                            color: $color__primary;
+                        }
+                    }
+                    .blog-info-meta {
+                        .meta {
+                            font-size: 14px;
+                            > span {
+                                display: inline-block;
+                                margin-right: 20px;
+                                &.view {
+                                    &:before {
+                                        content: '\f133';
+                                        font-family: Ionicons;
+                                        font-size: 16px;
+                                        color: $color__primary;
+                                        margin-right: 10px;
+                                    }
+                                }
+
+                                &.share {
+                                    &:before {
+                                        content: '\f3ac';
+                                        font-family: Ionicons;
+                                        font-size: 16px;
+                                        color: $color__primary;
+                                        margin-right: 10px;
+                                    }
+                                }
+
+                                &.like {
+                                    a {
+                                        &:before {
+                                            content: '\f387';
+                                            font-family: Ionicons;
+                                            font-size: 16px;
+                                            color: $color__primary;
+                                            margin-right: 10px;
+                                            display: inline-block;
+                                        }
+
+                                        &.liked {
+                                            &:before {
+                                                content: '\f388';
+                                            }
+                                        }
+
+                                        &.loading {
+                                            &:before {
+                                                content: '\f3b1';
+                                                -webkit-animation: spin 2s infinite linear;
+                                                -moz-animation: spin 2s infinite linear;
+                                                -o-animation: spin 2s infinite linear;
+                                                animation: spin 2s infinite linear;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &.comment {
+                                    &:before {
+                                        content: '\f11a';
+                                        font-family: Ionicons;
+                                        font-size: 16px;
+                                        color: $color__primary;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+                    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+                    .blog-thumbnail {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

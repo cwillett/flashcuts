@@ -1,0 +1,24 @@
+.insight-social {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	li {
+		margin-right: 10px;
+	}
+	a {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		line-height: 38px;
+		text-align: center;
+		border: 1px solid #f4f4f4;
+		border-radius: 20px;
+		font-size: 14px;
+		color: #696969;
+		&:hover {
+			background-color: $color__primary;
+			border-color: $color__primary;
+			color: #ffffff;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.insight-carousel {
+    &--slide {
+        outline: none;
+        img {
+            margin: 0 auto;
+            opacity: .2;
+            @include transit;
+        }
+        &:hover {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+    .slick-track {
+        @extend .row;
+        @extend .row-xs-center;
+    }
+    &.insight-carousel-scale {
+        .insight-carousel--slide {
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.slick-track {
+    min-width: 100%;
+}

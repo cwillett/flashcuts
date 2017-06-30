@@ -1,0 +1,12 @@
+.vc_custom_heading {
+    &.bottom-line {
+		&:after {
+			content: '';
+			display: block;
+			width: 30px;
+			height: 1px;
+			background-color: $color__primary;
+			margin-top: 5px;
+		}
+    }
+}

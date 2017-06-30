@@ -1,0 +1,165 @@
+.insight-one-page {
+    .insight-one-page-item {
+        padding: 100px 50px 80px 50px;
+        .insight-one-page-item-inner {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            position: relative;
+            .text {
+                max-width: 610px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 97;
+                transform: translate(-100%, -50%);
+                .time {
+                    font-family: $font__second;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #696969;
+                    text-transform: uppercase;
+                }
+                .title {
+                    font-size: 80px;
+                    font-weight: 700;
+                    font-family: $font__third;
+                    color: #ffffff;
+                    line-height: 1;
+                    margin-top: 20px;
+                }
+                .meta {
+                    margin-top: 20px;
+                    font-size: 14px;
+                    color: #ababab;
+                    > span {
+                        display: inline-block;
+                        margin-right: 20px;
+                        a {
+                            color: #696969;
+                        }
+                        &.view {
+                            &:before {
+                                content: '\f133';
+                                font-family: Ionicons;
+                                font-size: 16px;
+                                color: $color__primary;
+                                margin-right: 10px;
+                            }
+                        }
+                        &.share {
+                            &:before {
+                                content: '\f3ac';
+                                font-family: Ionicons;
+                                font-size: 16px;
+                                color: $color__primary;
+                                margin-right: 10px;
+                            }
+                        }
+                        &.like {
+                            a {
+                                &:before {
+                                    content: '\f387';
+                                    font-family: Ionicons;
+                                    font-size: 16px;
+                                    color: $color__primary;
+                                    margin-right: 10px;
+                                    display: inline-block;
+                                }
+                                &.liked {
+                                    &:before {
+                                        content: '\f388';
+                                    }
+                                }
+                                &.loading {
+                                    &:before {
+                                        content: '\f3b1';
+                                        -webkit-animation: spin 2s infinite linear;
+                                        -moz-animation: spin 2s infinite linear;
+                                        -o-animation: spin 2s infinite linear;
+                                        animation: spin 2s infinite linear;
+                                    }
+                                }
+                            }
+                        }
+                        &.comment {
+                            &:before {
+                                content: '\f11a';
+                                font-family: Ionicons;
+                                font-size: 16px;
+                                color: $color__primary;
+                                margin-right: 10px;
+                            }
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .video {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 96;
+                transform: translate(0%, -50%);
+                -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                .video-inner {
+                    position: relative;
+                    overflow: hidden;
+                    .video-play {
+                        z-index: 97;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        &:before {
+                            content: '';
+                            width: 70px;
+                            height: 70px;
+                            @include border-radius(35px);
+                            background-color: $color__primary;
+                            opacity: .3;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            z-index: 97;
+                        }
+                        &:after {
+                            content: '\f215';
+                            font-family: Ionicons;
+                            color: #ffffff;
+                            font-size: 18px;
+                            width: 56px;
+                            height: 56px;
+                            line-height: 56px;
+                            @include border-radius(28px);
+                            background-color: $color__primary;
+                            text-align: center;
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            z-index: 98;
+                        }
+                    }
+                    img {
+                        @include transit;
+                    }
+                }
+                &:hover {
+                    .video-inner {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

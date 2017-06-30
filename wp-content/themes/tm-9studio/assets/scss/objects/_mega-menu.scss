@@ -1,0 +1,49 @@
+#menu {
+    .sub-menu {
+        .mega-menu-content {
+			li {
+				.rtl & {
+					text-align: right;
+				}
+			}
+            .wpb_content_element {
+                margin-bottom: 0;
+            }
+            .widget_nav_menu {
+                ul {
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        padding: 0;
+						.rtl & {
+							text-align: right;
+						}
+                        a {
+                            padding: 10px 0;
+                        }
+                        &:first-child {
+                            a {
+                                padding-top: 0px;
+                            }
+                        }
+                        &:last-child {
+                            a {
+                                padding-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+nav#mobile {
+    .sub-menu {
+        .mega-menu-content {
+            .wpb_content_element {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

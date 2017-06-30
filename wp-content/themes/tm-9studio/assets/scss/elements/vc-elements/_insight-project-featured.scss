@@ -1,0 +1,90 @@
+.insight-project-featured {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    .image {
+        position: relative;
+        overflow: hidden;
+        z-index: 7;
+        img {
+            width: 100%;
+            height: auto;
+            @include transit;
+        }
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, .5);
+            z-index: 7;
+            opacity: 0;
+            @include transit;
+        }
+    }
+    .info {
+        position: absolute;
+        top: 60%;
+        left: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        transform: translateY(-50%);
+        z-index: 8;
+        opacity: 0;
+        @include transit;
+        .category {
+            a {
+                font-size: 14px;
+                font-family: $font__third;
+                font-style: italic;
+                color: #ffffff;
+                font-weight: 400;
+                &:hover {
+                    color: $color__primary;
+                }
+            }
+        }
+        .title {
+            font-size: 24px;
+            font-family: $font__third;
+            color: #ffffff;
+            font-weight: 400;
+            margin-bottom: 90px;
+        }
+        .more {
+            a {
+                font-family: $font__second;
+                font-size: 12px;
+                font-weight: 400;
+                color: $color__primary;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 15px 20px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: transparent;
+                line-height: 1;
+                &:hover {
+                    border-color: $color__primary;
+                }
+            }
+        }
+    }
+    &:hover {
+        .image {
+            &:before {
+                opacity: 1;
+            }
+        }
+        .info {
+            top: 50%;
+            opacity: 1;
+        }
+    }
+}

@@ -466,7 +466,14 @@ h6 {font-size: 12px;}
 }
 
 
-
+@media (min-width: 751px) {
+    #menu {
+        z-index: 1;
+    }
+    #menu #wrap.opened {
+        width:18%;
+    }
+}
 	
 	
 /* ---------- TOP ---------- */
@@ -523,6 +530,8 @@ h6 {font-size: 12px;}
             position:relative;
             width:200px;
             z-index: 10000;
+            background: #fff;
+            padding-left: 10px;
             img {
                 display: block;
                 height:20px;
@@ -533,6 +542,10 @@ h6 {font-size: 12px;}
         padding:$padding_750;
     
     }
+    
+    #menu #wrap.opened {
+        width: 45%
+    }
         
 }
 
@@ -541,6 +554,7 @@ h6 {font-size: 12px;}
     #top {
         
         z-index: 10000;
+        padding: 50px 0;
         
         svg#logo {
             display:none;
@@ -552,6 +566,8 @@ h6 {font-size: 12px;}
             position:relative;
             width:200px;
             z-index: 10000;
+            background: #fff;
+            padding-left: 10px;
             img {
                 display: block;
                 height:20px;
@@ -566,6 +582,20 @@ h6 {font-size: 12px;}
     
     }
     
+    #menu {
+         z-index: 99999;
+    }
+    
+    #menu #wrap {
+         z-index: 99999;
+    }
+    
+    #menu #wrap.opened {
+        width: 45%
+    }
+    
+    
+    
 }
 
 @media (max-width: 370px) {
@@ -573,6 +603,7 @@ h6 {font-size: 12px;}
     #top {
         
         z-index: 10;
+        padding: 50px 0 50px 50px;
         
         #logo {
             display: none;}
@@ -590,6 +621,14 @@ h6 {font-size: 12px;}
     
     }
     
+    #menu {
+         z-index: 99999;
+    }
+    
+    #menu #wrap {
+         z-index: 99999;
+    }
+    
 }
 
 
@@ -603,7 +642,7 @@ h6 {font-size: 12px;}
     right:0;
     text-align:right;
     top:0;
-    z-index:1;}
+}
 
 #menu.closed {
     width:auto;}
@@ -656,7 +695,7 @@ h6 {font-size: 12px;}
     position:absolute;
     right:0;
     top:0;
-    width:18%;}
+}
 
 #menu #wrap .close {
     display:none;
@@ -665,6 +704,12 @@ h6 {font-size: 12px;}
 
 #menu #wrap .close.default-color svg * {
     fill:#000!important;}
+
+#menu #wrap .open {
+    z-index:99999;
+    display: inline;
+    background: transparent;
+}
 
 #menu #wrap .open:hover svg *, #menu #wrap .close.default-color:hover svg * {
     fill:$link-color-primary!important;
@@ -676,9 +721,6 @@ h6 {font-size: 12px;}
     
     #menu #wrap {
         padding:$padding_750;}
-    
-    #menu #wrap.opened {
-        width:100%;}
     
 }
 

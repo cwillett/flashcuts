@@ -1,0 +1,149 @@
+.insight-blog {
+	&.style-01 {
+		.blog-classic-style {
+			border: none !important;
+			padding-bottom: 0 !important;
+		}
+
+		.entry-desc .entry-more {
+			margin-top: 10px;
+		}
+
+		.entry-desc .entry-more a {
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			font-weight: bold;
+			font-size: 14px;
+		}
+
+		.left {
+			@include media-breakpoint-up(md) {
+				padding-right: 50px;
+			}
+
+			.entry-title {
+				margin-top: 10px;
+				margin-bottom: 20px;
+			}
+			@include media-breakpoint-up(md) {
+				.blog-classic-style {
+					margin-bottom: 0 !important;
+				}
+			}
+		}
+
+		.right {
+			@include media-breakpoint-up(md) {
+				padding-left: 50px;
+			}
+
+			.post-thumbnail:before {
+				display: none !important;
+			}
+
+			.entry-desc {
+				@include media-breakpoint-up(md) {
+					padding-top: 0;
+				}
+			}
+
+			.entry-title {
+				display: block;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+		}
+	}
+
+	&.grid {
+		.entry-more {
+			margin-top: 20px;
+		}
+
+		.entry-more a {
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			font-weight: bold;
+			font-size: 14px;
+		}
+
+		&.blog-align-center {
+			text-align: center;
+		}
+	}
+
+	&.cake-style {
+		.blog-cake-style {
+			@include media-breakpoint-down(md) {
+				margin-bottom: 50px;
+			}
+
+			.desc-content {
+				position: relative;
+				padding-left: 115px;
+				margin-top: 30px;
+
+				.cat-list {
+					a {
+						display: inline-block;
+						font-size: 14px;
+						font-style: italic;
+						color: #ababab;
+					}
+				}
+
+				.entry-title {
+					margin-bottom: 20px;
+				}
+
+				.entry-content {
+					margin-bottom: 16px;
+				}
+
+				.entry-meta {
+					position: absolute;
+					top: 0;
+					left: 0;
+					border: 2px solid #e0e0e0;
+					border-radius: 100px;
+					display: block;
+					height: 85px;
+					width: 85px;
+					text-align: center;
+
+					&:after {
+						position: absolute;
+						content: '';
+						display: block;
+						width: 32px;
+						height: 1px;
+						background-color: #e7e5e4;
+						top: 55%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
+
+					b {
+						font-size: 34px;
+						letter-spacing: 0.2em;
+						display: block;
+						line-height: 1.3;
+					}
+
+					i {
+						font-size: 16px;
+						letter-spacing: 0.2em;
+					}
+				}
+			}
+
+			.entry-more a {
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				font-weight: bold;
+				font-size: 14px;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.counter-number {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    color: #00AEEF;
+}
+.counter-title {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin-top: 0;
+	color: #333;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value {
+	text-align: center;
+}
+@include media-breakpoint-down(md) {
+	body .insight-counter {
+		border: none!important
+	}
+}
+// Duration
+@for $i from 0 through 20 {
+	.duration-#{$i}s {
+		&,
+		&.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner,
+		&.odometer.odometer-theme-minimal.odometer-animating-down.odometer-animating .odometer-ribbon-inner,
+		&.odometer.odometer-theme-minimal.odometer-animating-up .odometer-ribbon-inner.absolute-index- &.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+			-webkit-transition: -webkit-transform #{$i}s ease-in-out;
+			-moz-transition: -moz-transform #{$i}s ease-in-out;
+			-ms-transition: -ms-transform #{$i}s ease-in-out;
+			-o-transition: -o-transform #{$i}s ease-in-out;
+			transition: transform #{$i}s ease-in-out;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+/*--------------------------------------------------------------
+# Header 02
+--------------------------------------------------------------*/
+header.header-02 {
+    display: inline-block;
+    width: 100%;
+    .top-search {
+        padding: 0 15px;
+        text-align: center;
+        input {
+            text-align: center;
+        }
+    }
+    .header-container {
+        position: relative;
+        z-index: 999;
+        .row {
+            margin: 0;
+        }
+        .header-left {
+            padding-left: 100px;
+        }
+        .header-right {
+            padding-right: 100px;
+            text-align: right;
+            position: static;
+            nav.menu {
+                display: inline-block;
+                text-align: right;
+                > ul {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    list-style: none;
+                    > li {
+                        > a {
+                            text-transform: uppercase;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+            .open-search {
+                display: inline-block;
+                font-size: 18px;
+                line-height: 1;
+                margin-left: 20px;
+                cursor: pointer;
+                color: #333333;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+
+}

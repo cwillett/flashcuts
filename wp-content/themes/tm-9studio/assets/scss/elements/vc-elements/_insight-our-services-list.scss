@@ -1,0 +1,74 @@
+.insight-our-services-list {
+    .big-title {
+        font-family: $font__third;
+        font-size: 40px;
+        font-weight: 400;
+        color: #333333;
+        a {
+            font-family: $font__third;
+            font-size: 40px;
+            font-weight: 400;
+            color: #333333;
+            position: relative;
+            &:after {
+                position: absolute;
+                right: -130px;
+                top: 50%;
+                content: '\f30f';
+                font-family: Ionicons;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 36px;
+                font-size: 18px;
+                font-weight: 400;
+                color: $color__primary;
+                @include border-radius(20px);
+                display: inline-block;
+                border: 2px solid #f0f0f0;
+                @include transit;
+                transform: translateY(-50%);
+            }
+            &:hover {
+                color: $color__primary;
+                &:after {
+                    border-color: $color__primary;
+                    background-color: $color__primary;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .items {
+        .item {
+            display: block;
+            width: 100%;
+            margin-top: 40px;
+            padding-left: 50px;
+            position: relative;
+            .number {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 24px;
+                font-weight: 700;
+                font-family: $font__second;
+                color: $color__primary;
+                opacity: .5;
+                @include rotate(-90deg);
+            }
+            .title {
+                display: block;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-family: $font__second;
+                color: #333333;
+            }
+            .content {
+                margin-top: 10px;
+                display: block;
+            }
+        }
+    }
+}

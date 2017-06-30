@@ -1,0 +1,140 @@
+.insight-single-testimonial {
+	margin-bottom: 0 !important;
+	width: 100%;
+	outline: none;
+	.item {
+		width: 100%;
+		text-align: center;
+		outline: none;
+		z-index: 98;
+		.title {
+			text-transform: uppercase;
+			letter-spacing: 0.4em;
+			font-weight: 700;
+			font-size: 18px;
+			margin-bottom: 35px;
+			font-family: $font__second;
+			color: #333333;
+		}
+		.text {
+			width: 80%;
+			max-width: 750px;
+			margin: 0 auto;
+			font-family: $font__third;
+			font-size: 24px;
+			font-style: italic;
+			letter-spacing: 0;
+			line-height: 2;
+			color: #333333;
+		}
+		.photo {
+			height: auto;
+			display: inline-block;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			margin: 0 0 55px 0;
+		}
+		.sign {
+			margin-top: 55px;
+		}
+		.info {
+			margin-top: 30px;
+			display: inline-block;
+			@include media-breakpoint-down(sm) {
+				text-align: center;
+				.photo {
+					float: none !important;
+
+					img {
+						float: none;
+					}
+				}
+			}
+			.author {
+				display: inline-block;
+				margin: 0 10px;
+				text-align: left;
+				font-family: $font__second;
+				.name,
+				.tagline {
+					display: inline-block;
+					letter-spacing: 0.05em;
+				}
+				.name {
+					font-size: 14px;
+					text-transform: uppercase;
+					color: #696969;
+					font-weight: 700;
+				}
+				.tagline {
+					font-size: 14px;
+					color: #cccccc;
+					&:before {
+						content: '/';
+						margin-left: 8px;
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+	}
+	&.small {
+		.item {
+			.photo {
+				height: auto;
+				margin-bottom: 40px;
+			}
+			.text {
+				font-size: 16px;
+				color: #696969;
+			}
+		}
+	}
+	.slick-next,
+	.slick-prev {
+		width: 48px;
+		height: 48px;
+		top: 50%;
+		margin-top: -24px;
+		background: none;
+		border-radius: 0;
+		z-index: 99;
+		opacity: 0.2;
+		@include transit;
+	}
+	.slick-next:before,
+	.slick-prev:before {
+		font-size: 48px;
+		font-weight: 400;
+		font-family: Ionicons;
+		color: $color__dark-gray;
+		opacity: 1;
+	}
+	.slick-next:hover,
+	.slick-prev:hover {
+		opacity: 1;
+	}
+	.slick-prev {
+		&:before {
+			content: '\f3d2';
+		}
+	}
+	.slick-next {
+		&:before {
+			content: '\f3d3';
+		}
+	}
+	.slick-dots {
+		li {
+			margin: 0;
+
+			button {
+				&:before {
+					font-size: 8px;
+				}
+			}
+		}
+	}
+}
