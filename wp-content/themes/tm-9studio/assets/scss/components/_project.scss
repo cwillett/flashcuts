@@ -67,11 +67,9 @@
         }
         .col-thumb {
             .thumb {
-                width: 100%;
                 overflow: hidden;
                 img {
-                    width: 100%;
-                    height: auto;
+                    height: 395px;
                     @include transit;
                 }
             }

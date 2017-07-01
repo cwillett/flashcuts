@@ -2,7 +2,7 @@
 	<div class="col-md-6 col-thumb">
 		<div class="thumb">
 			<a href="<?php echo get_permalink(); ?>">
-				<?php the_post_thumbnail( 'insight-project-list' ); ?>
+				<?php the_post_thumbnail( 'full' ); ?>
 			</a>
 		</div>
 	</div>

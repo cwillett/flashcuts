@@ -1,0 +1,67 @@
+/*
+Error: Invalid CSS after "/": expected identifier, was ".box-50"
+        on line 426 of ./wp-content/plugins/insight-core/assets/sass/insight-core.scss
+
+421:     width: 100% !important;
+422:     float: none !important;
+423:   }
+424: }
+425: 
+426: /.box-50 {
+427: 	 max-width:468px;
+428: 	 display: inline-block;
+429: 	 vertical-align: top;
+430: 	 margin-right: 20px;
+431:  }
+
+Backtrace:
+./wp-content/plugins/insight-core/assets/sass/insight-core.scss:426
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/scss/parser.rb:1162:in `expected'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/scss/parser.rb:1098:in `expected'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/scss/parser.rb:1078:in `expr!'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/scss/static_parser.rb:145:in `reference_combinator'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/scss/static_parser.rb:139:in `combinator'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/scss/static_parser.rb:112:in `selector'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/scss/parser.rb:1076:in `expr!'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:424:in `visit_rule'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:293:in `watch'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/plugin.rb:108:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/exec/sass_scss.rb:384:in `watch_or_update'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-1.9.3-p286/gems/sass-3.4.16/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"/\": expected identifier, was \".box-50\"\A         on line 426 of ./wp-content/plugins/insight-core/assets/sass/insight-core.scss\A \A 421:     width: 100% !important;\A 422:     float: none !important;\A 423:   }\A 424: }\A 425: \A 426: /.box-50 {\A 427: 	 max-width:468px;\A 428: 	 display: inline-block;\A 429: 	 vertical-align: top;\A 430: 	 margin-right: 20px;\A 431:  }"; }
