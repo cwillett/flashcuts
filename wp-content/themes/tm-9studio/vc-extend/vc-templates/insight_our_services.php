@@ -28,7 +28,7 @@ $el_class = $this->getExtraClass( $el_class ) . ' type-' . $type . ' style-' . $
 						<?php echo esc_html( $title ); ?>
 					</div>
 					<div class="content">
-						<?php echo esc_html( $content ); ?>
+						<?php echo $content; ?>
 					</div>
 				</div>
 			</div>
@@ -42,7 +42,7 @@ $el_class = $this->getExtraClass( $el_class ) . ' type-' . $type . ' style-' . $
 						<?php echo esc_html( $title ); ?>
 					</div>
 					<div class="content">
-						<?php echo esc_html( $content ); ?>
+						<?php echo $content; ?>
 					</div>
 				</div>
 			</div>
