@@ -64,6 +64,7 @@ if ( 'yes' === $featured_image ) {
 } elseif ( false !== $background_image_css_editor ) {
 	$image = '<img src="' . esc_attr( $background_image_css_editor ) . '" class="vc_gitem-zone-img" alt="{{ post_image_alt }}">';
 }
+error_log("link: ".$link);
 if ( strlen( $link ) > 0 && 'none' !== $link ) {
 	$css_class .= ' vc_gitem-is-link';
 	if ( 'custom' === $link && ! empty( $url ) ) {
@@ -81,7 +82,8 @@ if ( strlen( $link ) > 0 && 'none' !== $link ) {
 			. esc_attr( $link_s['title'] ) . '" target="' . esc_attr( trim( $link_s['target'] ) )
 			. '" class="vc_gitem-link vc-zone-link"' . $rel . '></a>';
 	} elseif ( 'post_link' === $link ) {
-		$image_block = '<a href="{{ post_link_url }}" title="{{ post_title }}" class="vc_gitem-link vc-zone-link"></a>';
+		//$image_block = '<a href="{{ post_link_url }}" title="{{ post_title }}" class="vc_gitem-link vc-zone-link"></a>';
+	        $image_block = '<span title="{{ post_title }}" class="vc_gitem-link vc-zone-link"></span>';
 	} elseif ( 'post_author' === $link ) {
 		$image_block = '<a href="{{ post_author_href }}" title="{{ post_author }}" class="vc_gitem-link vc-zone-link"></a>';
 	} elseif ( 'image' === $link ) {
